@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Бургерна в Дніпрі — смеш-бургери, доставка та бронювання столика | SmokeBun</title>
+  <meta name="description" content="Бургерна в Дніпрі: соковиті смеш-бургери, картопля фрі, крафтові лимонади. Доставка по Дніпру за 45 хвилин, самовивіз, бронювання столика онлайн." />
+  <meta name="keywords" content="бургерна Дніпро, бургери Дніпро, доставка бургерів Дніпро, ресторан Дніпро, смеш бургер, бургер на виніс, забронювати столик Дніпро" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Бургерна в Дніпрі — SmokeBun" />
+  <meta property="og:description" content="Смеш-бургери, доставка по Дніпру за 45 хвилин, бронювання столика онлайн." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1600&q=70" />
+  <meta property="og:locale" content="uk_UA" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Lightweight favicon (SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121214'/%3E%3Cpath d='M14 30c0-9 8-15 18-15s18 6 18 15z' fill='%23f2a03d'/%3E%3Crect x='12' y='34' width='40' height='6' rx='3' fill='%23e0662b'/%3E%3Cpath d='M14 44h36c0 4-3 6-7 6H21c-4 0-7-2-7-6z' fill='%23f2a03d'/%3E%3C/svg%3E" />
+
+  <!-- Schema.org (JSON-LD): Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "SmokeBun",
+    "description": "Бургерна в Дніпрі: смеш-бургери, доставка та бронювання столика.",
+    "servesCuisine": ["Burgers", "American"],
+    "priceRange": "₴₴",
+    "telephone": "+380501234567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "просп. Дмитра Яворницького, 1",
+      "addressLocality": "Дніпро",
+      "addressCountry": "UA"
+    },
+    "openingHours": "Mo-Su 10:00-23:00",
+    "acceptsReservations": "True",
+    "url": "https://example.com/",
+    "sameAs": [
+      "https://t.me/your_company",
+      "https://www.instagram.com/your_company",
+      "https://www.facebook.com/your_company"
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager: замініть GTM-XXXXXXX на свій ID контейнера -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+  <script>window.dataLayer = window.dataLayer || [];</script>
+
+<style>
+    :root{
+      --bg: #0b0b0c;
+      --panel: #121214;
+      --panel2:#17171a;
+      --border:#2a2a2f;
+      --text:#f3f4f6;
+      --muted: rgba(243,244,246,.72);
+      --gold:#f2a03d;
+      --gold2:#e0662b;
+      --shadow: 0 20px 40px rgba(0,0,0,.45);
+      --radius: 18px;
+      --maxw: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      background: radial-gradient(900px 400px at 20% 5%, rgba(242,140,50,.18), transparent 60%),
+                  radial-gradient(700px 400px at 85% 20%, rgba(242,140,50,.10), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--maxw); margin:0 auto; padding:0 18px}
+
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,11,12,.72);
+      border-bottom:1px solid rgba(42,42,47,.7);
+    }
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:12px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.3px;
+    }
+    .logo{
+      width:36px; height:36px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(242,140,50,.25), rgba(242,140,50,.05));
+      border:1px solid rgba(242,140,50,.35);
+      display:grid; place-items:center;
+      box-shadow: 0 10px 24px rgba(0,0,0,.35);
+    }
+    .logo svg{width:22px; height:22px}
+    nav{
+      display:flex; align-items:center; gap:14px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    nav a{padding:8px 10px; border-radius:12px}
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .cta{
+      display:flex; align-items:center; gap:10px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:600;
+      cursor:pointer;
+      transition:.18s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); border-color:rgba(242,140,50,.55)}
+    .btn-primary{
+      background: linear-gradient(135deg, rgba(242,140,50,.95), rgba(224,102,43,.92));
+      color:#1f0e04;
+      border:1px solid rgba(242,140,50,.35);
+    }
+    .btn-primary:hover{filter:saturate(1.05) brightness(1.03)}
+
+    /* Hero */
+    .hero{padding:34px 0 18px}
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(18,18,20,.92), rgba(18,18,20,.78));
+      border:1px solid rgba(42,42,47,.85);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero-copy{padding:22px}
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:13px; color:rgba(242,140,50,.95);
+      background: rgba(242,140,50,.10);
+      border:1px solid rgba(242,140,50,.20);
+      padding:6px 10px; border-radius:999px;
+    }
+    h1{
+      margin:12px 0 10px;
+      font-size:34px;
+      letter-spacing:-.4px;
+      line-height:1.15;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0 0 16px;
+      font-size:15.5px;
+    }
+    .bullets{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin:16px 0 0;
+      padding:0;
+      list-style:none;
+    }
+    .bullets li{
+      padding:12px 12px;
+      border-radius:16px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(42,42,47,.85);
+      color:rgba(243,244,246,.86);
+      font-size:14px;
+    }
+    .bullets strong{color:var(--text); font-weight:700}
+
+    .hero-photo{
+      position:relative;
+      min-height: 340px;
+    }
+    .hero-photo img{
+      width:100%; height:100%; object-fit:cover;
+      filter: contrast(1.05) brightness(.88);
+      transform: scale(1.03);
+    }
+    .overlay{
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(11,11,12,.08), rgba(11,11,12,.72));
+    }
+    .badge-row{
+      position:absolute;
+      left:16px; right:16px; bottom:16px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .badge{
+      font-size:12.5px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(18,18,20,.78);
+      border:1px solid rgba(242,140,50,.22);
+      color: rgba(243,244,246,.88);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Sections */
+    section{padding:18px 0}
+    .section-title{
+      display:flex; align-items:end; justify-content:space-between;
+      gap:10px;
+      margin:0 0 10px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size:20px;
+      letter-spacing:-.2px;
+    }
+    .section-title p{
+      margin:0;
+      color:var(--muted);
+      font-size:13.5px;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+
+    .mini-card{
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid rgba(42,42,47,.85);
+      background: rgba(255,255,255,.03);
+    }
+    .mini-card h3{
+      margin:0 0 6px; font-size:15.5px
+    }
+    .mini-card p{margin:0; color:var(--muted); font-size:13.8px}
+
+    /* Packages */
+    .packages{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+    .plan{
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid rgba(42,42,47,.85);
+      background: linear-gradient(180deg, rgba(23,23,26,.85), rgba(18,18,20,.65));
+      position:relative;
+      overflow:hidden;
+    }
+    .plan.featured{
+      border-color: rgba(242,140,50,.45);
+      box-shadow: 0 18px 38px rgba(0,0,0,.45);
+    }
+    .plan .tag{
+      position:absolute; top:14px; right:14px;
+      font-size:12px;
+      color:#1f0e04;
+      background: rgba(242,140,50,.92);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:700;
+    }
+    .plan h3{margin:0 0 6px; font-size:16px}
+    .plan .price{
+      margin:0 0 10px;
+      color: rgba(243,244,246,.9);
+      font-size:13.5px;
+    }
+    .plan ul{
+      margin:0;
+      padding:0 0 0 18px;
+      color: var(--muted);
+      font-size:13.5px;
+    }
+    .plan li{margin:6px 0}
+
+    /* Form */
+    .form-card{
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid rgba(42,42,47,.85);
+      background: linear-gradient(180deg, rgba(18,18,20,.92), rgba(18,18,20,.72));
+      box-shadow: var(--shadow);
+    }
+    form{display:grid; gap:10px}
+    .row-2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    label{font-size:13px; color: rgba(243,244,246,.84)}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(42,42,47,.95);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      outline:none;
+      transition:.15s ease;
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(242,140,50,.55);
+      box-shadow: 0 0 0 4px rgba(242,140,50,.10);
+    }
+    textarea{min-height:92px; resize:vertical}
+    .hint{font-size:12.5px; color: var(--muted); margin-top:-2px}
+    .form-actions{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+      margin-top:4px;
+    }
+    .fineprint{
+      font-size:12px; color: rgba(243,244,246,.62);
+      margin:0;
+    }
+    .success{
+      display:none;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(242,140,50,.35);
+      background: rgba(242,140,50,.10);
+      color: rgba(243,244,246,.92);
+    }
+
+    /* Footer */
+    footer{
+      padding:22px 0 34px;
+      color: var(--muted);
+      border-top:1px solid rgba(42,42,47,.7);
+      margin-top:18px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+      align-items:start;
+    }
+    .contacts{
+      display:grid; gap:8px;
+      padding:14px;
+      border-radius: var(--radius);
+      border:1px solid rgba(42,42,47,.85);
+      background: rgba(255,255,255,.03);
+    }
+    .contacts a{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(42,42,47,.85);
+      background: rgba(0,0,0,.12);
+    }
+    .contacts a:hover{border-color: rgba(242,140,50,.45)}
+    .muted{color:var(--muted)}
+    .small{font-size:12.5px}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-photo{min-height:280px}
+      .grid-3{grid-template-columns:1fr}
+      .packages{grid-template-columns:1fr}
+      nav{display:none}
+      h1{font-size:30px}
+    }
+    @media (max-width: 420px){
+      .row-2{grid-template-columns:1fr}
+      .btn{width:100%}
+      .cta{width:100%}
+    }
+  </style></head>
+
+<body>
+  <!-- Google Tag Manager (noscript): замініть GTM-XXXXXXX -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="#top" aria-label="SmokeBun — бургерна">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 11c0-3.5 3.6-6 8-6s8 2.5 8 6z" fill="rgba(242,160,61,.95)"/>
+              <rect x="3" y="12.5" width="18" height="2.4" rx="1.2" fill="#e0662b"/>
+              <path d="M4 16.5h16c0 1.8-1.4 2.8-3.2 2.8H7.2C5.4 19.3 4 18.3 4 16.5z" fill="rgba(242,160,61,.95)"/>
+            </svg>
+          </span>
+          <span>SmokeBun</span>
+        </a>
+
+        <nav aria-label="Навігація">
+          <a href="#menu">Меню</a>
+          <a href="#combos">Комбо</a>
+          <a href="#form">Замовлення</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn" href="tel:+380501234567" data-phone="header">+38 (050) 123-45-67</a>
+          <a class="btn btn-primary" href="#form">Забронювати / замовити</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+      <section class="hero" aria-label="Головний екран">
+        <div class="hero-grid">
+          <div class="card hero-copy">
+            <div class="kicker">Бургерна в Дніпрі</div>
+            <h1>Смеш-бургери в Дніпрі — соковиті, гарячі, з доставкою за 45 хвилин</h1>
+            <p class="sub">
+              Мармурова яловичина, свіжі булки щодня, власні соуси. Приходьте в заклад у центрі міста
+              або замовляйте доставку по Дніпру. Бронювання столика — онлайн за 1 хвилину.
+            </p>
+
+            <ul class="bullets">
+              <li><strong>45 хв</strong> — доставка по Дніпру</li>
+              <li><strong>10:00–23:00</strong> — щодня без вихідних</li>
+              <li><strong>100% яловичина</strong> — фарш готуємо самі</li>
+              <li><strong>Самовивіз</strong> — знижка 10%</li>
+            </ul>
+          </div>
+
+          <div class="card hero-photo" aria-label="Фото бургера">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=70"
+              alt="Бургер з яловичиною та сиром"
+            />
+            <div class="overlay" aria-hidden="true"></div>
+            <div class="badge-row" aria-hidden="true">
+              <span class="badge">Від 189 ₴</span>
+              <span class="badge">Доставка по Дніпру</span>
+              <span class="badge">Бронювання столика</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" aria-label="Меню">
+        <div class="section-title">
+          <h2>Хіти меню</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="mini-card">
+            <h3>Класичний смеш — 189 ₴</h3>
+            <p>Подвійна котлета, чеддер, мариновані огірки, цибуля, фірмовий соус.</p>
+          </div>
+          <div class="mini-card">
+            <h3>BBQ Бекон — 239 ₴</h3>
+            <p>Яловичина, хрусткий бекон, BBQ-соус, цибулеві кільця, чеддер.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Чікен Хот — 199 ₴</h3>
+            <p>Курка в паніровці, гострий соус, капуста коул-слоу, халапеньо.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="combos" aria-label="Комбо">
+        <div class="section-title">
+          <h2>Комбо та пропозиції</h2>
+        </div>
+
+        <div class="packages">
+          <div class="plan">
+            <h3>Комбо «Соло»</h3>
+            <p class="price">від 279 ₴ — на одного</p>
+            <ul>
+              <li>Будь-який бургер</li>
+              <li>Картопля фрі</li>
+              <li>Лимонад 0,4 л</li>
+              <li>Соус на вибір</li>
+            </ul>
+          </div>
+
+          <div class="plan featured">
+            <div class="tag">Найпопулярніший</div>
+            <h3>Комбо «Компанія»</h3>
+            <p class="price">від 899 ₴ — на 3–4 особи</p>
+            <ul>
+              <li>4 бургери на вибір</li>
+              <li>2 великі фрі + нагетси</li>
+              <li>4 напої</li>
+              <li>Безкоштовна доставка</li>
+            </ul>
+          </div>
+
+          <div class="plan">
+            <h3>Банкет / день народження</h3>
+            <p class="price">від 8 гостей — за домовленістю</p>
+            <ul>
+              <li>Окрема зона в залі</li>
+              <li>Сет-меню під ваш бюджет</li>
+              <li>Торт від партнерів</li>
+              <li>Музика та декор (за погодженням)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" aria-label="Форма замовлення">
+        <div class="section-title">
+          <h2>Бронювання столика або замовлення</h2>
+        </div>
+
+        <div class="form-card">
+          <div id="successBox" class="success" role="status" aria-live="polite">
+            Дякуємо! Заявку прийнято. Ми передзвонимо протягом 5 хвилин для підтвердження.
+          </div>
+
+          <form id="leadForm" novalidate>
+            <div class="row-2">
+              <div>
+                <label for="name">Ім’я</label>
+                <input id="name" name="name" type="text" placeholder="Наприклад: Олександр" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" type="tel" placeholder="+38 (0__) ___-__-__" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div>
+                <label for="type">Що потрібно</label>
+                <select id="type" name="type" required>
+                  <option value="" selected disabled>Оберіть варіант</option>
+                  <option value="table">Забронювати столик</option>
+                  <option value="delivery">Доставка</option>
+                  <option value="pickup">Самовивіз</option>
+                  <option value="banquet">Банкет / подія</option>
+                </select>
+              </div>
+              <div>
+                <label for="guests">Кількість гостей / порцій</label>
+                <select id="guests" name="guests">
+                  <option value="1-2">1–2</option>
+                  <option value="3-4">3–4</option>
+                  <option value="5-8">5–8</option>
+                  <option value="8+">8+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div>
+                <label for="when">Дата і час</label>
+                <input id="when" name="when" type="text" placeholder="Напр.: сьогодні 19:00 / 15.11 13:30" />
+              </div>
+              <div>
+                <label for="address">Адреса доставки</label>
+                <input id="address" name="address" type="text" placeholder="Тільки для доставки" />
+              </div>
+            </div>
+
+            <div>
+              <label for="comment">Коментар</label>
+              <textarea id="comment" name="comment" placeholder="Побажання до замовлення, алергії, місце в залі…"></textarea>
+            </div>
+
+            <!-- Blank placeholders for training / conversion mapping -->
+            <input type="hidden" name="utm_source" value="" />
+            <input type="hidden" name="utm_medium" value="" />
+            <input type="hidden" name="utm_campaign" value="" />
+            <input type="hidden" name="gclid" value="" />
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Відправити заявку</button>
+              <a class="btn" href="tel:+380671112233" data-phone="form">Дзвінок: +38 (067) 111-22-33</a>
+            </div>
+
+            <p class="fineprint">
+              Натискаючи «Відправити заявку», ви погоджуєтесь на обробку контактних даних для зворотного зв’язку (навчальний приклад).
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer id="contacts" aria-label="Контакти">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand" style="margin-bottom:10px">
+              <span>SmokeBun</span>
+            </div>
+            <p class="muted" style="margin:0 0 10px">
+              Бургерна в Дніпрі: просп. Дмитра Яворницького, 1 (адреса демонстраційна). Щодня 10:00–23:00.
+              Цей сайт — навчальний шаблон під лідген та налаштування конверсій.
+            </p>
+            <p class="small muted" style="margin:0">
+              © <span id="year"></span> SmokeBun. Усі дані та контакти — демонстраційні.
+            </p>
+          </div>
+
+          <div class="contacts" aria-label="Контактні посилання">
+            <a href="tel:+380501234567" data-phone="footer-hall">
+              <span>Бронювання столиків</span>
+              <strong>+38 (050) 123-45-67</strong>
+            </a>
+            <a href="tel:+380671112233" data-phone="footer-delivery">
+              <span>Доставка</span>
+              <strong>+38 (067) 111-22-33</strong>
+            </a>
+            <a href="https://t.me/your_company" target="_blank" rel="noopener">
+              <span>Telegram</span>
+              <strong>@your_company</strong>
+            </a>
+            <a href="https://www.instagram.com/your_company" target="_blank" rel="noopener">
+              <span>Instagram</span>
+              <strong>@your_company</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const $ = (sel) => document.querySelector(sel);
+    $("#year").textContent = new Date().getFullYear();
+
+    // UTM / gclid з URL у приховані поля
+    const params = new URLSearchParams(location.search);
+    ["utm_source","utm_medium","utm_campaign","gclid"].forEach((k) => {
+      const el = document.querySelector('input[name="' + k + '"]');
+      if (el && params.get(k)) el.value = params.get(k);
+    });
+
+    // Клік по телефону -> подія для GTM
+    document.querySelectorAll('a[href^="tel:"]').forEach((a) => {
+      a.addEventListener("click", () => {
+        window.dataLayer.push({ event: "phone_click", phone_location: a.dataset.phone || "" });
+      });
+    });
+
+    function validateForm(form) {
+      let ok = true;
+      form.querySelectorAll("[required]").forEach((el) => {
+        const val = (el.value || "").trim();
+        el.style.borderColor = val ? "rgba(42,42,47,.95)" : "rgba(255, 120, 120, .75)";
+        if (!val) ok = false;
+      });
+      return ok;
+    }
+
+    $("#leadForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.currentTarget;
+      if (!validateForm(form)) return;
+
+      // dataLayer push (для навчання GTM / GA4 / Google Ads)
+      window.dataLayer.push({
+        event: "lead_form_submit",
+        form_id: "leadForm",
+        form_name: "Бронювання / замовлення бургерна",
+        request_type: form.type.value,
+        guests: form.guests.value
+        // value: НЕ передаємо
+      });
+
+      $("#successBox").style.display = "block";
+      form.reset();
+      $("#successBox").scrollIntoView({ behavior: "smooth", block: "start" });
+      // NOTE: реальної відправки на бекенд немає — навчальний приклад.
+    });
+  </script>
+</body>
+</html>
